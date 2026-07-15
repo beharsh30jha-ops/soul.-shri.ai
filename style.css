@@ -232,3 +232,100 @@ opacity:0;
 }
 
 }
+/* 🌸 Floating Lotus */
+
+.lotus{
+
+position:fixed;
+
+font-size:28px;
+
+opacity:.18;
+
+pointer-events:none;
+
+animation:lotusFloat linear infinite;
+
+z-index:-2;
+
+}
+
+@keyframes lotusFloat{
+
+0%{
+
+transform:translateY(100vh) rotate(0deg);
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+}
+
+}
+
+/* 🌟 Glass Hover */
+
+.card:hover{
+
+transform:translateY(-12px) scale(1.02);
+
+box-shadow:
+
+0 0 25px rgba(168,85,247,.4),
+
+0 0 60px rgba(236,72,153,.2);
+
+}
+
+/* 💛 Golden Logo Glow */
+
+.logo{
+
+animation:logoGlow 3s infinite alternate;
+
+}
+
+@keyframes logoGlow{
+
+from{
+
+text-shadow:0 0 10px gold;
+
+}
+
+to{
+
+text-shadow:
+
+0 0 25px gold,
+
+0 0 45px #ffb703;
+
+}
+
+}
+
+/* 🌈 Gradient Text */
+
+.hero h1{
+
+background:linear-gradient(
+
+90deg,
+
+#ffffff,
+
+#f0abfc,
+
+#fde68a
+
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
